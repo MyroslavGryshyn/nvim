@@ -62,14 +62,14 @@ return {
         "tpope/vim-fugitive"
     },
     {
-        'neoclide/coc.nvim',
+        "neoclide/coc.nvim",
         requires = {
-            'rafcamlet/coc-nvim-lua',
-            'clangd/coc-clangd',
-            'josa42/coc-go',
-            'iamcco/coc-spell-checker',
+            "rafcamlet/coc-nvim-lua",
+            "clangd/coc-clangd",
+            "josa42/coc-go",
+            "iamcco/coc-spell-checker",
         },
-        branch = 'release',
+        branch = "release",
     },
     {
         'nvim-lualine/lualine.nvim',
@@ -80,5 +80,8 @@ return {
 		}
 	},
         dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
+	    "github/copilot.vim"
     }
 }
