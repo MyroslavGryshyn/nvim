@@ -33,4 +33,7 @@ vim.opt.completeopt = "longest,menuone"
 vim.opt.shell = "/bin/zsh"
 
 vim.opt.splitright = true
+
+vim.cmd("let g:python_host_prog='/Users/myroslavhryshyn/.virtualenvs/neovim/bin/python'")
+
 vim.opt.tags = tags
