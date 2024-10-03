@@ -1,5 +1,5 @@
 TODO:
-
+- [ ] Set up Co-pilot
 - [ ] Switch back to fzf search instead of telescope
 - [ ] Set up fzf
 - [ ] Add NerdTree with keymaps
