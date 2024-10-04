@@ -4,6 +4,6 @@ TODO:
 - [x] Set up fzf
 - [x] Add NerdTree with keymaps
 - [x] Set up tabs
-- [ ] Set up tags
+- [x] Set up tags
 - [x] Set up python linters(black, flake8, isort?)
 - [x] Check leftovers in .vim/init.vim
