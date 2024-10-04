@@ -86,4 +86,11 @@ return {
         {
             "nvie/vim-flake8",
         },
+        {
+            "psf/black",
+            config = function()
+                vim.g.black_linelength = 79
+                vim.g.black_skip_string_normalization = 1
+            end
+        }
 	}
