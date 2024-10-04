@@ -52,3 +52,6 @@ map("n", "cpf", ":let @+ = expand('%:t')<CR>")
 map("n", "<C-t>", ":tabnew<CR>")
 map("n", "<C-p>", ":tabprevious<CR>")
 map("n", "<C-n>", ":tabnext<CR>")
+
+-- Flake8
+map("n", "<F8>", ":Flake<CR>")

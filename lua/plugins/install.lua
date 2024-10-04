@@ -82,5 +82,8 @@ return {
 		},
 		{
 			"github/copilot.vim"
-		}
+		},
+        {
+            "nvie/vim-flake8",
+        },
 	}
