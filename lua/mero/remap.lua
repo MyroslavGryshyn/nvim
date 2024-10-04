@@ -40,7 +40,7 @@ map("n", "<leader>gs", ":FzfLua git_files<CR>", { noremap = true, silent = true 
 map("n", "<leader>L", ":FzfLua lines<CR>", { noremap = true, silent = true })
 map("n", "<leader>l", ":FzfLua blines<CR>", { noremap = true, silent = true })
 map("n", "<leader>b", ":FzfLua buffers<CR>", { noremap = true, silent = true })
-map("n", "<leader>t", ":FzfLua tags_live_grep<CR>", { noremap = true, silent = true })
+map("n", "<leader>t", ":FzfLua tags_grep_visual<CR>", { noremap = true, silent = true })
 map("n", "<leader>ag", ":FzfLua grep_visual<CR>", { noremap = true, silent = true })
 
 -- Full path
