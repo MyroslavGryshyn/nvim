@@ -34,7 +34,7 @@ vim.opt.shell = "/bin/zsh"
 
 vim.opt.splitright = true
 
-vim.cmd("let g:python_host_prog='/Users/myroslavhryshyn/.virtualenvs/neovim/bin/python'")
+vim.g.python_host_prog="/Users/myroslavhryshyn/.virtualenvs/neovim/bin/python"
 
 -- TODO: Change when setting up tags
 --vim.opt.tags = tags

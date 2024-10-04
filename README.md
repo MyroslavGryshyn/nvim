@@ -5,5 +5,5 @@ TODO:
 - [x] Add NerdTree with keymaps
 - [x] Set up tabs
 - [ ] Set up tags
-- [ ] Set up python linters(black, flake8, isort?)
-- [ ] Check leftovers in .vim/init.vim
+- [x] Set up python linters(black, flake8, isort?)
+- [x] Check leftovers in .vim/init.vim

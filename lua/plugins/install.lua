@@ -92,5 +92,8 @@ return {
                 vim.g.black_linelength = 79
                 vim.g.black_skip_string_normalization = 1
             end
-        }
+        },
+        {
+            "tpope/vim-commentary",
+        },
 	}
