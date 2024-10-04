@@ -1,30 +1,54 @@
+local map = vim.keymap.set
+
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>n", vim.cmd.Ex)
 
-vim.keymap.set("i", "jj", "<Esc>", {})
-vim.keymap.set("n", "<leader>li", ":Lazy install<CR>", {})
-vim.keymap.set("n", "<leader>lu", ":Lazy update<CR>", {})
+map("i", "jj", "<Esc>", {})
+map("n", "<leader>li", ":Lazy install<CR>", {})
+map("n", "<leader>lu", ":Lazy update<CR>", {})
 
-vim.keymap.set("n", "-", ":nohl<CR>", {})
-vim.keymap.set("n", "W", ":w<CR>", {})
-vim.keymap.set("n", "Q", ":q<CR>", {})
+map("n", "-", ":nohl<CR>", {})
+map("n", "W", ":w<CR>", {})
+map("n", "Q", ":q<CR>", {})
 
 -- Use ctrl-[hjkl] to select the active split!
-vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
-vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
-vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
-vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
+map("n", "<c-k>", ":wincmd k<CR>")
+map("n", "<c-j>", ":wincmd j<CR>")
+map("n", "<c-h>", ":wincmd h<CR>")
+map("n", "<c-l>", ":wincmd l<CR>")
 
-vim.keymap.set({"n", "v"}, "gy", [["+y]])
-vim.keymap.set({"n", "v"}, "gp", [["+P]])
+map({"n", "v"}, "gy", [["+y]])
+map({"n", "v"}, "gp", [["+P]])
 
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Rename as in IDE
-vim.keymap.set("n", "<leader>rr", "<Plug>(coc-rename)")
+map("n", "<leader>rr", "<Plug>(coc-rename)")
 
-vim.keymap.set("n", "<leader>v", ":vsplit<CR>")
+map("n", "<leader>v", ":vsplit<CR>")
 
-vim.keymap.set("n", "QA", ":qa<CR>")
+map("n", "X", ":q<CR>")
+map("n", "QA", ":qa<CR>")
 
-vim.keymap.set("n", "<F9>", ":Black<CR>")
+map("n", "<F9>", ":Black<CR>")
+
+map("n", "<leader>n", ":NvimTreeFindFile<CR>", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>n', ":lua require('mero.utils').toggleTree()<CR>", {noremap = true})
+
+map("n", "<C-g>", ":FzfLua files<CR>", { noremap = true, silent = true })
+map("n", "<leader>gs", ":FzfLua git_files<CR>", { noremap = true, silent = true })
+map("n", "<leader>L", ":FzfLua lines<CR>", { noremap = true, silent = true })
+map("n", "<leader>l", ":FzfLua blines<CR>", { noremap = true, silent = true })
+map("n", "<leader>b", ":FzfLua buffers<CR>", { noremap = true, silent = true })
+map("n", "<leader>t", ":FzfLua tags_live_grep<CR>", { noremap = true, silent = true })
+map("n", "<leader>ag", ":FzfLua grep_visual<CR>", { noremap = true, silent = true })
+
+-- Full path
+map("n", "cp", ":let @+ = expand('%:p')<CR>")
+-- Just filename
+map("n", "cpf", ":let @+ = expand('%:t')<CR>")
+
+-- Tabs
+map("n", "<C-t>", ":tabnew<CR>")
+map("n", "<C-p>", ":tabprevious<CR>")
+map("n", "<C-n>", ":tabnext<CR>")
